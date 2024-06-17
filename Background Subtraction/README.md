@@ -1,4 +1,4 @@
-# Adaptive background mixture models for real-time tracking using exponentially decaying weights.
+## Adaptive background mixture models for real-time tracking using exponentially decaying weights.
 
 ### Data format
 ```

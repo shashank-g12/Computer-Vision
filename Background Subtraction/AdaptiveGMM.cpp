@@ -175,13 +175,13 @@ int main(){
 	BackgroundSubtractor bgs(5,0.003, 0.8, 50);
 
 	//give dataset filename here
-	//cv::VideoCapture capture("COL780 Dataset/Candela_m1.10/input/Candela_m1.10_%6d.png");
-	cv::VideoCapture capture("COL780 Dataset/IBMtest2/input/in%6d.png");
+	cv::VideoCapture capture("Candela_m1.10/input/Candela_m1.10_%6d.png");
+	// cv::VideoCapture capture("COL780 Dataset/IBMtest2/input/in%6d.png");
 	cv::Size S = cv::Size((int) capture.get(cv::CAP_PROP_FRAME_WIDTH),    // Acquire input size
                   (int) capture.get(cv::CAP_PROP_FRAME_HEIGHT));
 	
 	//give output file name here
-	cv::VideoWriter outputVideo("IBMtest2.avi", cv::VideoWriter::fourcc('M','P','4','2'), 15, S,false);
+	cv::VideoWriter outputVideo("Candela_m1.avi", cv::VideoWriter::fourcc('M','P','4','2'), 15, S,false);
 	int i = 0;
 	cv::namedWindow("Display window", cv::WINDOW_AUTOSIZE );
 	while(1){

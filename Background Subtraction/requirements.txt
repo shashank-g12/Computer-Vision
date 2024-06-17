@@ -1,6 +1,0 @@
-I have implemented the code in C++
-
-Steps to run the code:
-i) Install opencv module in the system
-ii) compile the code using command -  g++ AdaptiveGMM.cpp -o output `pkg-config --cflags --libs opencv4`
-iii) run the executable using ./output

@@ -1,5 +1,14 @@
 ## Adaptive background mixture models for real-time tracking using exponentially decaying weights.
 
+# Data format
+```
+├── Candela_m1.10
+│   └── input
+│       |── Candela_m1.10_000000.png
+|       |── Candela_m1.10_000001.png
+|       ...
+|       └── Candela_m1.10_000349.png
+```
 ### Parameters used are as follows-
   - `K`: No of gaussian mixture models for a particular pixel (default = 5)
   - `lr`: Learning rate (default = 0.003)

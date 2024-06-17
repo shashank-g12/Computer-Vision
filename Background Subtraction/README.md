@@ -32,8 +32,8 @@ g++ AdaptiveGMM.cpp -o exec `pkg-config --cflags --libs opencv4`
 - Still image of moving objects for certain frames at the start. (for Eg in the HighwayI dataset, some cars remain still for a few frames at the start of the video.)
 
 
-### Analysis of comparison with 2022AIB2687 Y=3, Non parametric model for background subtraction with constant weights.
-- Fewer shadows pixels detected in Y=3 due to the scaling of R,G,B values as mentioned in the paper by which color information is separated from the lightness information which is used to suppress shadows.
-- The moving objects adapt quicker in Y=3 than in Y=0 due to the usage of short term model and sample values itself as mean for intensity distribution.
-- Less false positive detection in Y=3, For Eg, In the case of Candela_m1.10 dataset even the plant was being deteced in Y=0 but not in Y=3.
+### Analysis of comparison with Non parametric model for background subtraction with constant weights(1).
+- Fewer shadows pixels detected in (1) due to the scaling of R,G,B values as mentioned in the paper by which color information is separated from the lightness information which is used to suppress shadows.
+- The moving objects adapt quicker in (1) than in our method due to the usage of short term model and sample values itself as mean for intensity distribution.
+- Less false positive detection in (1), For Eg, In the case of Candela_m1.10 dataset even the plant was being deteced in our method but not in (1).
 

@@ -324,7 +324,7 @@ Mat pairwiseStiching(Mat image1, Mat image2){
 int main( int argc, char** argv )
 {   
     vector<string> filenames;
-    string path = "New Dataset/5/*.jpg";
+    string path = "Dataset/*.jpg";
     glob(path, filenames, false);
 
     Mat stiched = imread(filenames[0], IMREAD_COLOR);
@@ -334,6 +334,6 @@ int main( int argc, char** argv )
         Mat result = pairwiseStiching(stiched, image);
         stiched = result;
     }
-    imwrite("results/5.jpg", stiched);
+    imwrite("stiched.jpg", stiched);
     return 0;
 }

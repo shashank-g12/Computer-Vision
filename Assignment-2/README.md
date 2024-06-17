@@ -12,22 +12,22 @@ After finding the corner strength of each pixel using det(H)-k*Trace(H)^2 (k=0.1
 - An affine matrix was calculated using the matched keypoints with the help of ransac algorithm (used opencv function estimateAffine2d() for this). Then the adjacent frames were stiched using opencv warpAffine function and a combine function writen by myself.I have Implemented pairwise Stiching where it stiches image 1 with image 2 and then the resultant with image 3 and so on.
 
 ## Dataset setup
-
+```
 ├── Dataset
 │    |── 1.png
 |    |── 2.png
 |    ...
 |    └── 10.png
-
+```
 ## Running the code
 
 - Compile the code using the command
 ```
-g++ harris.cpp -o exec `pkg-config --cflags --libs opencv4`
+make
 ```
 - Run the executable
 ```
-./exec
+./harris
 ```
 - Stiched image is `stiched.png`
 

@@ -6,6 +6,16 @@
   - `T`: Threshold used to determine the background model for a pixel (default = 0.8)
   - `C`: Minimum no of connected component size (pixels are displayed only if it is a part of a connected component of size greater than value). Used to eliminate noise. Used Two-pass connected component algorithm (8-connectivity) as mentioned in the paper. (default = 50)
 
+### Running the code 
+- First, install the opencv module
+- Compile the code with the command
+```
+g++ AdaptiveGMM.cpp -o exec `pkg-config --cflags --libs opencv4`
+```
+- run the executable
+```
+./exec
+```
 
 ### Failure methods:
 - Detection of shadows of moving objects. This is one of the disadvantages of this algorithm which is solved in the 'non parametric model for background subtraction' paper.

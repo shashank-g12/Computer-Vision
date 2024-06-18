@@ -7,6 +7,8 @@ import os
 
 patternSize = (7,5)
 
+os.makedirs('results', exist_ok = True)
+
 class OBJ:
 	def __init__(self, filePath):
 		self.objName = None

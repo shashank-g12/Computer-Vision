@@ -23,7 +23,9 @@ python camera_calibration.py
 ```
 - View the results generated in the `results` folder.
 - Example images
+
 ![alt text](https://github.com/shashank-g12/Computer-Vision/blob/main/Augmented%20Reality/results/image_2.jpg)
 -
+
 ![alt text](https://github.com/shashank-g12/Computer-Vision/blob/main/Augmented%20Reality/results/image_3.jpg)
 
